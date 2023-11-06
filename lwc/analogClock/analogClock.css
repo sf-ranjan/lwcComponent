@@ -16,16 +16,15 @@
     text-align: center;
     font-size: 18px;
     color: #333;
-    margin: 0px 60px 40px;
+    margin: 0px 40px 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 120px;
+    height: auto;
+    overflow: auto;
   }
 
-.time {
+.time, .date {
     font-weight: bold;
-}
-.date{
-    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 .weather-info {
@@ -37,13 +36,10 @@
     -webkit-background-clip: text;
 }
 
-.temperature {
+.temperature, .conditions {
     font-size: 2rem;
 }
 
-.conditions {
-    font-size: 2rem;
-}
 .weather-icon {
     text-align: right;
     padding: 10px;

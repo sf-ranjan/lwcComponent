@@ -1,0 +1,66 @@
+.align-text {
+  text-align: center;
+}
+
+.parent-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow child items to wrap to the next row */
+  justify-content: space-between;
+  margin: 10px 30px 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.icon-with-text {
+  margin-left: 8px; /* Add space between icon and text */
+}
+
+.output-panel {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin: 0px 30px 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+
+.output-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.output-value {
+  font-size: 18px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 auto; /* Add spacing between columns */
+}
+
+/* Media Query for Smaller Screens (e.g., screens less than 768px wide) */
+@media (max-width: 700px) {
+  .parent-container {
+    flex-direction: column; /* Stack columns on top of each other */
+    margin: 10px; /* Adjust the margin for spacing */
+    display: flex;
+    align-items: center; /* Center child elements horizontally */
+    justify-content: center;
+  }
+
+  .output-panel {
+    margin: 0; /* Remove horizontal margin to fit smaller screens */
+  }
+
+  .column {
+    flex: 1; /* Revert back to the original flex value */
+    margin: 0; /* Remove margin between columns for smaller screens */
+  }
+}

@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title="Digital Clock" icon-name="custom:custom26">
+    <div class="slds-grid slds-gutters output-panel">
+      <div class="digital-clock slds-col">
+        <span class="time">{currentTime}</span>
+        <span class="date">{currentDate}</span>
+      </div>
+      <div class="weather-app slds-col">
+        <div class="weather-info">
+          <div class="temperature">{temperature}°C</div>
+          <div class="conditions">{weatherConditions}</div>
+        </div>
+        <div class="weather-icon">
+          <!-- Weather graphics will go here -->
+        </div>
+      </div>
+    </div>
+  </lightning-card>
+</template>

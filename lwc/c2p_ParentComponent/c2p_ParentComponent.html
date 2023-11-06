@@ -1,0 +1,30 @@
+<template>
+  <lightning-card >
+    <h1 slot="title">
+      <lightning-icon icon-name="standard:bill_of_materials" alternative-text="all" title="Calculator" size="medium">
+      </lightning-icon> 
+      <span class="icon-with-text ">Calculator</span>
+    </h1>
+    <div class="output-panel align-text">
+      <span class="output-value">{number}</span>
+      <span class="output-value"> {operator}</span>
+      <span class="output-value"> {currentNum}</span>
+      <span class="output-value"> {equalsTo} {result}</span>
+    </div>
+    <div class="parent-container">
+      <div class="column">
+        <c-c2p_chiled-component
+          onbtnevent={handleEvent}
+          class="column"
+        ></c-c2p_chiled-component>
+      </div>
+      <div class="column">
+        <c-c2p_operation-pad
+          onoperation={handleOperation}
+          oncalculate={handleCalc}
+          class="column"
+        ></c-c2p_operation-pad>
+      </div>
+    </div>
+  </lightning-card>
+</template>

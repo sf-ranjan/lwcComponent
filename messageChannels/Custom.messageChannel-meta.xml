@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Testing Message</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This is operator field for manupulation</description>
+        <fieldName>operator</fieldName>
+    </lightningMessageFields>
+    <masterLabel>CustomMessage</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,17 @@
+<template>
+  <lightning-button-group>
+    <div class="number-pad">
+      <template for:each={number} for:item="item">
+        <div class="row" key={item}>
+          <lightning-button
+            variant="brand"
+            onclick={handleButtonClick}
+            data-name={item}
+            label={item}
+            class="number-button">
+          </lightning-button>
+        </div>
+      </template>
+    </div>
+  </lightning-button-group>
+</template>

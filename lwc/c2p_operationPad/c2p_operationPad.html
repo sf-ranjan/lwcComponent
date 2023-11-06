@@ -1,0 +1,15 @@
+<template>
+    <div class="number-pad">
+        <template for:each={operation} for:item="item">
+          <div class="row" key={item}>
+            <lightning-button
+              variant="brand"
+              onclick={handleOperationClick}
+              data-name={item}
+              label={item}
+              class="number-button">
+            </lightning-button>
+          </div>
+        </template>
+      </div>
+</template>

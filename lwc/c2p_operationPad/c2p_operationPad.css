@@ -1,0 +1,49 @@
+.number-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.number-button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  --sds-c-button-brand-color-background: coral;
+  --slds-c-button-brand-color-border: coral;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media Query for Smaller Screens (e.g., screens less than 768px wide) */
+@media (max-width: 700px) {
+  .number-pad {
+    max-width: 100%; /* Make it fluid to fill the available width */
+    padding: 12px; /* Reduce padding */
+  }
+
+  .number-button {
+    width: 50px; /* Reduce button width */
+    height: 50px; /* Reduce button height */
+    font-size: 16px; /* Reduce font size */
+  }
+}
+
+/* Media Query for Even Smaller Screens (e.g., screens less than 480px wide) */
+@media (max-width: 480px) {
+  .number-pad {
+    max-width: 100%; /* Make it fluid to fill the available width */
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .number-button {
+    width: 40px; /* Further reduce button width */
+    height: 40px; /* Further reduce button height */
+    font-size: 14px; /* Further reduce font size */
+  }
+}

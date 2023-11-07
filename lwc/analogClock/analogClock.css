@@ -6,6 +6,7 @@
     color: transparent;
     display: inline-grid;
     -webkit-background-clip: text;
+    padding: 10px;
 
 }
 .output-panel {
@@ -34,6 +35,7 @@
     background: linear-gradient(to right, #605243, #00ffff); /* Customize the gradient colors as desired */
     color: transparent;
     -webkit-background-clip: text;
+    padding-top: 4px;
 }
 
 .temperature, .conditions {

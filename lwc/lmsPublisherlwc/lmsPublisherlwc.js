@@ -3,23 +3,16 @@ import { publish, MessageContext } from 'lightning/messageService';
 import MSGCHANNEL from '@salesforce/messageChannel/Custom__c'
 
 export default class LmsPublisherlwc extends LightningElement {
-    inputValue;
 
     @wire(MessageContext)
     contextData;
 
-    handlePublish(){
+    handlePublish(event){
         const message = {
             operator:{
-                value:this.inputValue
+                value:event.target.value//this.inputValue
             }
         }
         publish(this.contextData, MSGCHANNEL, message);
     }
-
-    handlekeyUp(event){
-        this.inputValue = event.target.value;
-
-    }
-
 }

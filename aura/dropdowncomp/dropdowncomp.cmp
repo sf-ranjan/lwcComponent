@@ -1,0 +1,10 @@
+<aura:component controller="DynamicPicklistUtility">
+    <aura:attribute name="options" type="Map"/>
+    <aura:handler name="init" value="{!this}" action="{!c.dropDownOptions}"/>  
+    <lightning:select name="select" label="Select a Color" required="true" messageWhenValueMissing="Did you forget to select?">
+        <option value="">-- None --</option>
+        <aura:iteration items="{!v.options}" var="option" indexVar="key">
+            <option value="{!option.value}" text="{!option.key}"></option>
+        </aura:iteration>
+    </lightning:select>
+</aura:component>

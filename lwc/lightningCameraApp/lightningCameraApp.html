@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <lightning-button label={camLabel} onclick={initCamera}></lightning-button>
+        <lightning-button label="Capture Image" onclick={captureImage}></lightning-button>
+        <lightning-button label="Clear Image" onclick={clearImage}></lightning-button>
+        <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <video class="videoElement" autoplay></video>
+                    <canvas class="slds-hide canvasElement"></canvas>
+                </div>
+            <div class="slds-col">
+                <img src="" class="slds-hide imageElement" alt="captured image" />
+            </div>
+        </div>
+    </lightning-card>
+</template>
